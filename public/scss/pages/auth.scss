@@ -1,0 +1,40 @@
+.min-h-screen{
+
+    background-image: url("/images/background.png");
+
+    .logos{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .logo-auth{
+
+            width: 400px;
+        }
+
+        .expo-auth{
+
+            width: 100px;
+            margin-top: -25px;
+        
+        }
+    }
+
+    .formulario{
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .informacoes{
+
+            input{
+
+                width: 70%;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import "../variaveis";
+
+
+.feed{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .linha{
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .publicacao{
+
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            
+            .informacoes{
+
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .conteudo{
+
+                width: 100%;
+
+                .capa{
+
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}

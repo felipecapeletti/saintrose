@@ -1,0 +1,1 @@
+.min-h-screen{background-image:url("/images/background.png")}.min-h-screen .logos{width:100%;display:flex;flex-direction:column;align-items:center}.min-h-screen .logos .logo-auth{width:400px}.min-h-screen .logos .expo-auth{width:100px;margin-top:-25px}.min-h-screen .formulario{display:flex;flex-direction:column;gap:50px}.min-h-screen .formulario .informacoes input{width:70%}

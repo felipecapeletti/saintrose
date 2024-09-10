@@ -1,0 +1,171 @@
+@import "variaveis", "pages/home", "pages/auth";
+
+.h1{
+    
+    font-size: 24px;
+    font-weight: bold;
+    color: $dourado;
+}
+
+.h2{
+
+    font-size: 20px;
+    font-weight: bold;
+    color: $dourado;
+}
+
+.h3{
+
+    font-size: 18px;
+    font-weight: 200;
+    color: $dourado;
+}
+
+.h4{
+
+    font-size: 16px;
+    font-weight: 200;
+    color: $dourado;
+}
+
+body{
+    
+    width: 100%;
+    min-width: 500px;
+    background-image: url("/images/background.png");
+
+    header{
+
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0 20px 0;
+        background-color: $preto-transparente;
+
+        .trinta{
+
+            width: 30%;
+            height: 100%;
+            display: flex;
+            place-content: center;
+            align-items: center;
+            gap: 50px;
+            
+            .social{
+
+                width: 30px;
+                height: 30px;
+
+                svg{
+
+                    width: 30px;
+                    height: 30px;
+                    fill: $dourado;
+                }
+            }
+
+            .perfil{
+
+                width: 30%;
+                height: 30px;
+                color: $dourado;
+
+            }
+
+            .btn-header{
+
+                width: 30%;
+                height: 30px;
+                background-color: $preto;
+                color: $dourado;
+                border: solid 1px #c5b273;
+                font-weight: bold;
+                text-decoration: none;
+                align-content: center;
+                text-align: center;
+                border-radius: 10px;
+                padding: 0 10px;
+
+                &:hover{
+
+                    background-color: $preto;
+                    color: $dourado;
+                    scale: 1.1;
+                }
+            }
+
+            .logout-btn{
+                width: 30%;
+
+                .btn-header{
+
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    background-color: $preto;
+                    color: $dourado;
+                    border: solid 1px #c5b273;
+                    font-weight: bold;
+                    text-decoration: none;
+                    align-content: center;
+                    text-align: center;
+                    border-radius: 10px;
+                    padding: 0 10px;
+    
+                    &:hover{
+    
+                        background-color: $preto;
+                        color: $dourado;
+                        scale: 1.1;
+                    }
+                }
+
+            }
+        }
+
+        .setenta{
+
+            width: 70%;
+            height: 100%;
+            display: flex;
+            place-content: center;
+
+            .logo{
+
+                width: 500px;
+            }
+
+            .expo{
+
+                width: 120px;
+                position: absolute;
+                top: 85px;
+            }
+        }
+    }
+
+    main{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer{
+
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(0, 0, 0, 0.612);
+        align-items: center;
+        justify-content: center;
+
+        p{
+            color: $dourado;
+        }
+        
+    }
+}

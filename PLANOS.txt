@@ -1,0 +1,40 @@
+Feito       ✅
+Cancelado   ❌
+Em Análise  ❔
+
+
+
+                                                 |STATUS|
+
+NOME ✅
+
+IDENTIDADE                                          ✅
+
+ESTRUTURAS:
+
+    - HOME
+        |_ ACESSO RAPIDO                            ✅
+        |_ PARCEIROS                                ✅
+
+    - LOGIN/REGISTER 
+        |_ CUSTOMIZAÇÃO                             ✅
+        |_ UPLOAD DE IMAGEM DE PERFIL
+        |_ REGRAS e POLITICA
+
+    - PAGINA DE PERFIL
+        |_ Adicionar Redes Sociais e BIO
+        |_ Edição (Imagem / Nome / Rede Social)
+
+    - EXPOSIÇÕES
+        |_ PAGINAÇÃO 
+        |_ FILTRO ??                                ❌
+        
+
+    - ANÚNCIOS
+        |_ CRIAÇÃO DE ANÚNCIO
+        |_ LINK PARA CONTATO
+        
+    - GERAL
+        |_ DENUNCIA DE POSTAGEM                     ❔
+        |_ VOTAÇÃO                                  ❔
+        |_ RANK MENSAL                              ❔
