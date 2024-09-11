@@ -12,17 +12,6 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
             <div class="formulario">
-                <div class="foto-perfil">
-                    <div class="upload">
-                        <label for="fotoperfil">Foto de Perfil:</label>
-                        <input type="file" id="fotoperfil" name="fotoperfil">
-                    </div>
-                    <div class="preview">
-
-                        <!-- Preview Aqui -->
-
-                    </div>
-                </div>
                 <div class="informacoes">
                     <div>
                         <x-label for="name" value="{{ __('Name') }}" />

@@ -18,8 +18,8 @@ ESTRUTURAS:
 
     - LOGIN/REGISTER 
         |_ CUSTOMIZAÇÃO                             ✅
-        |_ UPLOAD DE IMAGEM DE PERFIL
-        |_ REGRAS e POLITICA
+        |_ UPLOAD DE IMAGEM DE PERFIL               ⏱
+        |_ REGRAS e POLITICA                        ⏱
 
     - PAGINA DE PERFIL
         |_ Adicionar Redes Sociais e BIO

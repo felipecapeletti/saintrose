@@ -1,37 +1,12 @@
-@import "variaveis", "pages/home", "pages/auth";
-
-.h1{
-    
-    font-size: 24px;
-    font-weight: bold;
-    color: $dourado;
-}
-
-.h2{
-
-    font-size: 20px;
-    font-weight: bold;
-    color: $dourado;
-}
-
-.h3{
-
-    font-size: 18px;
-    font-weight: 200;
-    color: $dourado;
-}
-
-.h4{
-
-    font-size: 16px;
-    font-weight: 200;
-    color: $dourado;
-}
+@import 'variaveis', 'pages/home', 'pages/auth', 'pages/perfil', 'pages/feed';
 
 body{
     
     width: 100%;
     min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url("/images/background.png");
 
     header{
@@ -45,7 +20,7 @@ body{
 
         .trinta{
 
-            width: 30%;
+            width: 20%;
             height: 100%;
             display: flex;
             place-content: center;
@@ -86,12 +61,15 @@ body{
                 text-align: center;
                 border-radius: 10px;
                 padding: 0 10px;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s;
 
                 &:hover{
 
                     background-color: $preto;
                     color: $dourado;
-                    scale: 1.1;
+                    scale: 1.05;
                 }
             }
 
@@ -112,21 +90,44 @@ body{
                     text-align: center;
                     border-radius: 10px;
                     padding: 0 10px;
-    
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.3s;
+
                     &:hover{
     
                         background-color: $preto;
                         color: $dourado;
-                        scale: 1.1;
+                        scale: 1.05;
                     }
                 }
 
+            }
+
+            .caminho-perfil{ 
+
+                display: flex;
+                align-items: center;
+                
+                .icone-perfil{
+
+                    width: 50px;
+                    border-radius: 100px;
+                }
+
+                .nome-perfil{
+
+                    color: $dourado;
+                    font-size: 18px;
+                    font-weight: bold;  
+                    text-decoration: none;              
+                }
             }
         }
 
         .setenta{
 
-            width: 70%;
+            width: 60%;
             height: 100%;
             display: flex;
             place-content: center;
@@ -147,8 +148,9 @@ body{
 
     main{
 
-        width: 100%;
-        height: 100%;
+        width: 70%;
+        min-height: 800px;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
     }

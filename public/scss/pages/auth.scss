@@ -1,3 +1,5 @@
+@import '../variaveis';
+
 .min-h-screen{
 
     background-image: url("/images/background.png");
@@ -33,7 +35,7 @@
 
             input{
 
-                width: 70%;
+                width: 100%;
             }
         }
     }

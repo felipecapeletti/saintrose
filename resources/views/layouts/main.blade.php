@@ -42,9 +42,10 @@
             </a>
             <div class="trinta">
                 @auth
-                
-                <a href="/dashboard" class="pefil">{{Auth::user()->name}}</a>                   
-              
+                <div class="caminho-perfil">
+                    <img src="\images\imgperfil.jpg" class="icone-perfil" style="margin-right: 10px" alt="">
+                    <a href="/dashboard" class="nome-perfil">{{Auth::user()->name}}</a>                   
+                </div>
                 <form class="logout-btn" action="/logout" method="POST">
                     @csrf
                     <a href="/logout" class="btn-header" onclick="event.preventDefault(); this.closest('form').submit();">LOGOUT</a>
