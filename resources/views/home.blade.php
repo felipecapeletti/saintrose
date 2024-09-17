@@ -23,14 +23,14 @@
     </div>
     <div class="partner-block">
         <img src="\images\parceiros.png" alt="#">
-        <div>
-            <a href="#">
+        <div class="partner-links">
+            <a href="#" class="link">
                 <img src="\images\PARCEIRO.png" alt="#">
             </a>
-            <a href="#">
+            <a href="#" class="link">
                 <img src="\images\PARCEIRO.png" alt="#">
             </a>
-            <a href="#">
+            <a href="#" class="link">
                 <img src="\images\PARCEIRO.png" alt="#">
             </a>
         </div>

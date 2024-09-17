@@ -62,13 +62,23 @@
             width: 400px;
         }
         
-        a{
-            width: 300px;
-            color: transparent;
+        .partner-links{
 
-            img{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
 
-                width: 300px;
+
+            .link{
+
+                width: 30%;
+                color: transparent;
+
+                img{
+
+                    width: 100%;
+                }
             }
         }
     }
