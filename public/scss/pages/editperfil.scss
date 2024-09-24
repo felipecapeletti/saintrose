@@ -1,0 +1,143 @@
+@import '../variaveis';
+
+.update{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+    img{
+
+        width: 300px;
+    }
+
+    .formularios{
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        .formulario{
+
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background-color: $preto;
+            border-radius: 40px;
+            border: 5px solid $dourado;
+            padding: 40px;
+            gap: 50px;
+            
+
+            .uploadfoto{
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+
+                label{
+
+                color: $dourado;
+                font-size: 18px;
+                font-weight: bold;
+                }
+
+                input{
+
+                    width: 130px;
+                    overflow: hidden;
+                }
+            }
+
+            .btn-formulario{
+
+                width: 60%;
+                height: 30px;
+                background-color: $preto;
+                color: $dourado;
+                border: solid 1px #c5b273;
+                font-weight: bold;
+                text-decoration: none;
+                align-content: center;
+                text-align: center;
+                border-radius: 10px;
+                padding: 0 10px;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s;
+    
+                &:hover{
+    
+                    background-color: $preto;
+                    color: $dourado;
+                    scale: 1.05;
+                }
+            }
+        }
+    }
+
+    .formulario-senha{
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $preto;
+        border-radius: 40px;
+        border: 5px solid $dourado;
+        padding: 40px;
+        gap: 50px;
+        
+        .campos{
+
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+
+            label{
+
+                color: $dourado;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            input{
+
+                width: 200px;
+                overflow: hidden;
+            }
+        }
+
+        .btn-formulario{
+
+            width: 10%;
+            height: 30px;
+            background-color: $preto;
+            color: $dourado;
+            border: solid 1px #c5b273;
+            font-weight: bold;
+            text-decoration: none;
+            align-content: center;
+            text-align: center;
+            border-radius: 10px;
+            padding: 0 10px;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+
+            &:hover{
+
+                background-color: $preto;
+                color: $dourado;
+                scale: 1.05;
+            }
+        }
+    }
+}

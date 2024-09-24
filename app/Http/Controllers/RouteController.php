@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class EventController extends Controller
+class RouteController extends Controller
 {
     public function home ()
     {
@@ -34,6 +34,12 @@ class EventController extends Controller
     {
 
         return view ('perfil');
+    }
+
+    public function editperfil ()
+    {
+
+        return view ('perfilUpdate');
     }
 
     public function projetos ()

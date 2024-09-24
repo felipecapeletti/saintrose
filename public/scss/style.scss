@@ -1,4 +1,4 @@
-@import 'variaveis', 'pages/home', 'pages/auth', 'pages/perfil', 'pages/feed';
+@import 'variaveis', 'pages/home', 'pages/auth', 'pages/perfil', 'pages/feed', 'pages/contato', 'pages/editperfil';
 
 body{
     
@@ -17,15 +17,16 @@ body{
         flex-direction: row;
         padding: 10px 0 20px 0;
         background-color: $preto-transparente;
+        background-attachment: fixed;
 
-        .trinta{
+        .vinte{
 
             width: 20%;
             height: 100%;
             display: flex;
             place-content: center;
             align-items: center;
-            gap: 50px;
+            justify-content: space-around;
             
             .social{
 
@@ -109,23 +110,32 @@ body{
                 display: flex;
                 align-items: center;
                 
-                .icone-perfil{
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
 
-                    width: 50px;
-                    border-radius: 100px;
-                }
+                    .icone-perfil{
 
-                .nome-perfil{
+                        width: 50px;
+                        border-radius: 10px;
+                    }
 
-                    color: $dourado;
-                    font-size: 18px;
-                    font-weight: bold;  
-                    text-decoration: none;              
+                    .nome-perfil{
+
+                        color: $dourado;
+                        font-size: 18px;
+                        font-weight: bold;  
+                        text-decoration: none;
+                    
+                    }
                 }
             }
         }
 
-        .setenta{
+        .sessenta{
 
             width: 60%;
             height: 100%;

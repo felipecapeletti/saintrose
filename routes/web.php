@@ -1,13 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EventController;
+use App\Http\Controllers\RouteController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ExposicaoController;
 
-Route::get('/', [EventController::class,'home']);
+Route::get('/', [RouteController::class,'home']);
 
-Route::get('/contato', [EventController::class,'contato']);
+Route::get('/contato', [RouteController::class,'contato']);
+
+Route::get( '/edit-perfil', [RouteController::class,'editperfil']);
+
+Route::put('/imagem-update', [AdminController::class, 'imagemupdate']);
+
+Route::put('/perfil-update', [AdminController::class, 'perfilupdate']);
+
+Route::put('/senha-update', [AdminController::class, 'senhaupdate']);
+
 
 
 

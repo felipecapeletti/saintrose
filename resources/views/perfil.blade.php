@@ -9,12 +9,13 @@
     <div class="cabecario">
         
         <div class="identidade">
-            <!-- FAZER UM IF PARA TROCAR A FOTO DE PERFIL -->
 
-                <img src="\images\imgperfil.jpg" alt="imagem-perfil">
+            @if (Auth::user()->profile_picture)
+                <img src="{{ asset('storage/' . Auth::user()->profile_picture) }}" alt="imagem-perfil" />
+            @else
+                <img src="\images\fotoPerfil.jpg" alt="imagem-perfil">
+            @endif
 
-            <!-- FINALIZAR O IF COM EXIBINDO A FOTO RELACIONADA AO PERFIL -->
-            
             <h2 class="titulo">NOME DO USUARIO</h2>
         </div>
         <div class="conteudo">
