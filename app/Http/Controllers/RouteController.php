@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+use App\Models\User;
+use App\Models\Projeto;
+
 
 class RouteController extends Controller
 {
@@ -18,22 +23,27 @@ class RouteController extends Controller
         return view ('contato');
     }
 
+//Meu Perfil 
     public function meuperfil ()
     {
 
         return view ('dashboard');
     }
 
+    public function novoprojeto ()
+    {
+
+        return view ('novoProjeto');
+    }
+
     public function meusprojetos ()
     {
 
-        return view ('meusprojetos');
-    }
+        $user_id = Auth::id();
 
-    public function perfilvisitado ()
-    {
+        $projetos = Projeto::where('user_id', $user_id)->get();
 
-        return view ('perfil');
+            return view ('meusProjetos', compact('projetos'));
     }
 
     public function editperfil ()
@@ -42,10 +52,28 @@ class RouteController extends Controller
         return view ('perfilUpdate');
     }
 
+//Perfil de Usuários
+    public function perfilacess ($id)
+    {
+
+        $user = User::findOrFail($id);
+
+        return view ('perfil', compact('user'));
+    }
+
     public function projetos ()
     {
 
         return view ('projetos');
+    }
+
+// Feeds
+
+
+    public function feed ()
+    {
+
+        return view ('feed');
     }
 
     public function esportivos ()
@@ -83,12 +111,5 @@ class RouteController extends Controller
     {
 
         return view ('motocicletas');
-    }
-
-    
-    public function feed ()
-    {
-
-        return view ('feed');
     }
 }

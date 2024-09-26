@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -58,6 +59,25 @@ class AdminController extends Controller
             
             // Atualiza a senha do usuário
             $user->password = Hash::make($request->password);
+        
+            $user->save();
+        
+            return redirect()->back();
+        }
+
+    public function socialupdate(Request $request)
+        {
+            $request->validate([
+                'instagram' => 'string',
+                'tiktok' => 'string',
+                'youtube' => 'string',
+            ]);
+        
+            $user = Auth::user();
+ 
+            $user->instagram = $request->instagram;
+            $user->tiktok = $request->tiktok;
+            $user->youtube = $request->youtube; 
         
             $user->save();
         

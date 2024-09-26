@@ -13,17 +13,53 @@
         width: 300px;
     }
 
+    .tabs{
+
+        display: flex;
+        max-width: 850px;
+        justify-content: center;
+        gap: 12px;
+
+        .tab{
+            
+            
+            padding: 5px;
+            width: 150px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: $dourado;
+            background-color: $preto;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid $dourado;
+            text-decoration: none;
+            transition: 0.3s;
+    
+                &:hover{
+
+                    scale: 1.05;
+                }
+        }
+
+        .ativo{
+
+            color: $preto !important;
+            background-color: $dourado !important;
+        }
+    }
+
     .formularios{
 
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
-        
+        align-items: center;
+
         .formulario{
 
-            width: 40%;
-            display: flex;
+            width: 60%;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
@@ -32,32 +68,57 @@
             border: 5px solid $dourado;
             padding: 40px;
             gap: 50px;
-            
 
-            .uploadfoto{
+            p{
+                font-size: 14px;
+                color: $dourado;
+            }
+            
+            .campos{
 
                 display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 20px;
+
+                svg{
+
+                    fill: $dourado;
+                    width: 20px;
+                    margin-right: 10px;
+                }
 
                 label{
 
-                color: $dourado;
-                font-size: 18px;
-                font-weight: bold;
+                    color: $dourado;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-right: 10px;
                 }
 
                 input{
 
-                    width: 130px;
-                    overflow: hidden;
+                    width: 230px;
+                    border-radius: 5px;
                 }
             }
 
+            .upload-img{
+                    label{
+
+                        color: $dourado;
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-right: 10px;
+                    }
+
+                    input{
+
+                        width: 135px;;
+                        overflow: hidden;
+                    }
+            }      
+
             .btn-formulario{
 
-                width: 60%;
+                width: 30%;
                 height: 30px;
                 background-color: $preto;
                 color: $dourado;
@@ -82,62 +143,4 @@
         }
     }
 
-    .formulario-senha{
-
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        background-color: $preto;
-        border-radius: 40px;
-        border: 5px solid $dourado;
-        padding: 40px;
-        gap: 50px;
-        
-        .campos{
-
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-
-            label{
-
-                color: $dourado;
-                font-size: 16px;
-                font-weight: bold;
-            }
-
-            input{
-
-                width: 200px;
-                overflow: hidden;
-            }
-        }
-
-        .btn-formulario{
-
-            width: 10%;
-            height: 30px;
-            background-color: $preto;
-            color: $dourado;
-            border: solid 1px #c5b273;
-            font-weight: bold;
-            text-decoration: none;
-            align-content: center;
-            text-align: center;
-            border-radius: 10px;
-            padding: 0 10px;
-            justify-content: center;
-            align-items: center;
-            transition: 0.3s;
-
-            &:hover{
-
-                background-color: $preto;
-                color: $dourado;
-                scale: 1.05;
-            }
-        }
-    }
 }

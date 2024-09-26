@@ -23,7 +23,15 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
+    
+     public function projetos()
+     {
+         return $this->hasMany(Projeto::class);
+     }
+    
+
+     //daqui pra cima sou eu
+     protected $fillable = [
         'name',
         'email',
         'password',
